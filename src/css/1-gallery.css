@@ -1,0 +1,22 @@
+.gallery {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.gallery-item {
+    max-width: calc((100% - (24px * 2))/3);
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: ease 0.3s;
+    cursor: url('/img/bxs_hand-down.png'), auto;
+}
+
+.gallery-image:hover {
+    transform: scale(1.04);
+}
